@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #e0dddd;
+  color: #000;
+  font-family: 'Roboto' , sans-serif; }
+
+@media (min-width: 375px) {
+  .titulo-index {
+    margin: 1rem;
+    padding: 3rem;
+    text-align: center; }
+  .intro p {
+    margin: 1rem;
+    text-align: center; }
+  .card-home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background: #EBCECC;
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "card-1"  "card-2"  "card-3" "card-4"; }
+  .card-1 {
+    grid-area: card-1;
+    align-items: center; }
+  .card-2 {
+    grid-area: card-2;
+    align-items: center; }
+  .card-3 {
+    grid-area: card-3;
+    align-items: center; }
+  .card-4 {
+    grid-area: card-4;
+    align-items: center; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background: #E95258;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px; }
+  .foto-intro {
+    width: 100%;
+    height: auto; }
+  .tituloA {
+    text-align: center;
+    margin: 2rem; }
+  .adopciones-req {
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "adopciones-historia"  "adopciones-requisitos"  "adopciones-beneficios";
+    justify-items: center; }
+  .adopciones-historia {
+    grid-area: adopciones-historia;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #E95258; }
+  .adopciones-requisitos {
+    grid-area: adopciones-requisitos;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #EBCECC; }
+  .adopciones-beneficios {
+    grid-area: adopciones-beneficios;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #E95258; }
+  .foto-servicios {
+    width: 100%; }
+  .nav-item:hover {
+    background: #EBCECC; }
+  .consejos-accordion {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #EBCECC;
+    grid-template-areas: "consejos-perros"  "consejos-gatos";
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 10px; }
+  .consejos-perros {
+    grid-area: consejos-perros;
+    align-items: center; }
+  .consejos-gatos {
+    grid-area: consejos-gatos;
+    align-items: center; }
+  .card-consejos {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .card-consejos iframe {
+    width: 350px; } }
+
+@media (min-width: 768px) {
+  .intro img {
+    vertical-align: middle; }
+  .card-home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background: #EBCECC;
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "card-1"  "card-2"  "card-3" "card-4"; }
+  .card-1 {
+    grid-area: card-1;
+    align-items: center; }
+  .card-2 {
+    grid-area: card-2;
+    align-items: center; }
+  .card-3 {
+    grid-area: card-3;
+    align-items: center; }
+  .card-4 {
+    grid-area: card-4;
+    align-items: center; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background: #E95258;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80px; }
+  .foto-intro {
+    width: 100%; }
+  .tituloA {
+    text-align: center;
+    margin: 2rem; }
+  .adopciones-req {
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "adopciones-historia"  "adopciones-requisitos"  "adopciones-beneficios";
+    justify-items: center; }
+  .adopciones-historia {
+    grid-area: adopciones-historia;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #E95258; }
+  .adopciones-requisitos {
+    grid-area: adopciones-requisitos;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #EBCECC; }
+  .adopciones-beneficios {
+    grid-area: adopciones-beneficios;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #E95258; }
+  .foto-servicios {
+    width: 100%; }
+  .nav-item:hover {
+    background: #EBCECC; }
+  .consejos-accordion {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #EBCECC;
+    grid-template-areas: "consejos-perros"  "consejos-gatos";
+    justify-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    column-gap: 10px;
+    row-gap: 10px; }
+  .consejos-perros {
+    grid-area: consejos-perros;
+    align-items: center; }
+  .consejos-gatos {
+    grid-area: consejos-gatos;
+    align-items: center; }
+  .card-consejos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem; } }
+
+@media (min-width: 992px) {
+  .card-home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #EBCECC;
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-areas: "card-1 card-1 card-2 card-2" "card-3 card-3 card-4 card-4";
+    margin: 0.5rem;
+    padding: 0.5rem; }
+  .card-1 {
+    grid-area: card-1;
+    align-items: center; }
+  .card-2 {
+    grid-area: card-2;
+    align-items: center; }
+  .card-3 {
+    grid-area: card-3;
+    align-items: center; }
+  .card-4 {
+    grid-area: card-4;
+    align-items: center; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background: #E95258;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px; }
+  .foto-intro {
+    width: 500px;
+    height: auto; }
+  .tituloA {
+    text-align: center;
+    margin: 2rem; }
+  .adopciones-req {
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "adopciones-historia"  "adopciones-requisitos"  "adopciones-beneficios";
+    justify-items: center; }
+  .adopciones-historia {
+    grid-area: adopciones-historia;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #E95258; }
+  .adopciones-requisitos {
+    grid-area: adopciones-requisitos;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #EBCECC; }
+  .adopciones-beneficios {
+    grid-area: adopciones-beneficios;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #E95258; }
+  .foto-servicios {
+    width: 500px;
+    height: 600px; }
+  .nav-item:hover {
+    background: #EBCECC; }
+  .consejos-accordion {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #EBCECC;
+    grid-template-areas: "consejos-perros"  "consejos-gatos";
+    justify-items: center;
+    margin: 1rem;
+    padding: 1rem; }
+  .consejos-perros {
+    grid-area: consejos-perros;
+    align-items: center; }
+  .consejos-gatos {
+    grid-area: consejos-gatos;
+    align-items: center; }
+  .card-consejos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem; } }
+
+@media (min-width: 1200px) {
+  .card-home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #EBCECC;
+    grid-template-areas: "card-1 card-2 card-3 card-4";
+    justify-items: center;
+    margin: 1rem;
+    padding: 1rem; }
+  .card-1 {
+    grid-area: card-1;
+    align-items: center; }
+  .card-2 {
+    grid-area: card-2;
+    align-items: center; }
+  .card-3 {
+    grid-area: card-3;
+    align-items: center; }
+  .card-4 {
+    grid-area: card-4;
+    align-items: center; }
+  .presetntacion-home {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 10px;
+    margin-top: 50px; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background: #E95258;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 200px; }
+  .img-thumbnail {
+    object-fit: cover;
+    width: 250px;
+    height: 250px; }
+  .foto-intro {
+    width: 500px;
+    height: auto;
+    margin: 5rem 4rem; }
+  .tituloA {
+    text-align: center;
+    margin: 2rem; }
+  .adopciones-req {
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "adopciones-historia adopciones-requisitos adopciones-beneficios";
+    justify-items: center; }
+  .adopciones-historia {
+    grid-area: adopciones-historia;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #E95258; }
+  .adopciones-requisitos {
+    grid-area: adopciones-requisitos;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #EBCECC; }
+  .adopciones-beneficios {
+    grid-area: adopciones-beneficios;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background: #E95258; }
+  .foto-servicios {
+    width: 500px;
+    height: 600px; }
+  .foto-adopciones:hover {
+    transform: scale(1.2); }
+  .nav-item {
+    transition: 1s; }
+  .nav-item:hover {
+    background: #EBCECC;
+    transform: scale(1.1);
+    padding: 1px; }
+  .consejos-accordion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #EBCECC;
+    grid-template-areas: "consejos-perros consejos-gatos";
+    justify-items: center;
+    margin: 1rem;
+    padding: 1rem; }
+  .consejos-perros {
+    grid-area: consejos-perros;
+    align-items: center; }
+  .consejos-gatos {
+    grid-area: consejos-gatos;
+    align-items: center; }
+  .card-consejos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem; } }
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  font-size: 1.5rem;
+  color: #fff; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #362A38;
+  font-size: 1.5rem; }
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #2BBEC6; }
+
+.accordion-item {
+  color: #362A38; }
+
+.titulo-consejos {
+  text-align: center;
+  color: #362A38;
+  margin: 1rem; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #2BBEC6;
+  border-color: #70DDE3; }
