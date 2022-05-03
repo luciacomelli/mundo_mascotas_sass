@@ -1,0 +1,7 @@
+$mapEstilos: (colorFondo:#2BBEC6, colorBorde:#70DDE3);
+
+@each $var , $color in $mapEstilos {
+    #{$var}{
+color: $color;
+    }
+}

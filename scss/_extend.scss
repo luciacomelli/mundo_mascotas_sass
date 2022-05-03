@@ -1,0 +1,8 @@
+.titulos{
+    text-align: center;
+  }
+
+  .titulos-color{
+    @extend .titulos;
+    color: #362A38;
+  }

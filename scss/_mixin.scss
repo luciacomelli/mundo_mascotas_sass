@@ -1,0 +1,7 @@
+@mixin cardAdopcionesParametros($margin,$padding,$alineacion) {
+margin: $margin;
+padding: $padding;
+align-items: $alineacion;  
+}
+
+

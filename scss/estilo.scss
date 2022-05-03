@@ -1,5 +1,7 @@
 @import "variables";
-
+@import "mixin";
+@import "extend";
+@import "maps";
 
 
 * {
@@ -186,7 +188,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 100vh;
   }
   
   .foto-intro{
@@ -211,23 +213,17 @@
   }
   .adopciones-historia{
     grid-area: adopciones-historia;
-    align-items: center;
-    margin: 1rem;
-    padding: 1rem;
+    @include cardAdopcionesParametros(1rem, 1rem, center);
     background: $color-rosa-oscuro;
   }
   .adopciones-requisitos{
     grid-area: adopciones-requisitos;
-    align-items: center;
-    margin: 1rem;
-    padding: 1rem;
+    @include cardAdopcionesParametros(1rem, 1rem, center);
     background: $color-rosa-claro;
   }
   .adopciones-beneficios{
     grid-area: adopciones-beneficios;
-    align-items: center;
-    margin: 1rem;
-    padding: 1rem;
+    @include cardAdopcionesParametros(1rem, 1rem, center);
     background: $color-rosa-oscuro;
   }
   .foto-servicios{
@@ -303,7 +299,7 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      height: 100px;
+      height: 100vh;
     }
     .foto-intro{
       width: 500px;
@@ -427,7 +423,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 100vh;
   }
   
   .img-thumbnail {
@@ -459,23 +455,17 @@
   }
   .adopciones-historia{
     grid-area: adopciones-historia;
-    align-items: center;
-    margin: 1rem;
-    padding: 1rem;
+    @include cardAdopcionesParametros(1rem, 1rem, center);
     background: $color-rosa-oscuro;
   }
   .adopciones-requisitos{
     grid-area: adopciones-requisitos;
-    align-items: center;
-    margin: 1rem;
-    padding: 1rem;
+    @include cardAdopcionesParametros(1rem, 1rem, center);
     background: $color-rosa-claro;
   }
   .adopciones-beneficios{
     grid-area: adopciones-beneficios;
-    align-items: center;
-    margin: 1rem;
-    padding: 1rem;
+    @include cardAdopcionesParametros(1rem, 1rem, center);
     background: $color-rosa-oscuro;
   }
   .foto-servicios{
@@ -533,19 +523,17 @@
   
   .accordion-button:not(.collapsed) {
     color: #fff;
-    background-color: #2BBEC6;
+    background-color: map-get($mapEstilos: colorFondo);
   }
   .accordion-item{
     color: #362A38;
   }
   .titulo-consejos{
-    text-align: center;
-    color: #362A38;
     margin: 1rem;
+    @include titulos-color;
   }
   .btn-primary {
     color: #fff;
-    background-color: #2BBEC6;
-    border-color: #70DDE3;
+    background-color: map-get($mapEstilos: colorFondo);
+    border-color: map-get($mapEstilos: colorBorde);
   }
-  
